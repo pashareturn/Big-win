@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Promotion Service</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Social Media Promotion Service</h1>
+<p>Grow your social media with our promotion service</p>
+
+<a href="register.html"><button>Get Started</button></a>
+
+</body>
+</html><h2>Create Account</h2>
+
+<input id="email" placeholder="Email"><br>
+<input id="pass" type="password" placeholder="Password"><br>
+<button onclick="register()">Register</button>
+
+<script src="script.js"></script><h2>Login</h2>
+
+<input id="email" placeholder="Email"><br>
+<input id="pass" type="password" placeholder="Password"><br>
+<button onclick="login()">Login</button>
+
+<script src="script.js"></script>function register(){
+  localStorage.setItem(
+    document.getElementById("email").value,
+    document.getElementById("pass").value
+  );
+  alert("Account Created");
+  window.location="login.html";
+}
+
+function login(){
+  let e = document.getElementById("email").value;
+  let p = document.getElementById("pass").value;
+
+  if(localStorage.getItem(e) === p){
+    window.location="dashboard.html";
+  } else {
+    alert("Wrong details");
+  }
+}<h2>Buy Promotion Package</h2>
+
+<p>Instagram Promotion</p>
+<p>Price: Rs 500</p>
+
+<a href="payment.html">
+<button>Buy Now</button>
+</a><h2>Payment Details</h2>
+
+<p>Send Rs 500 to:</p>
+
+<p><b>JazzCash:</b> 03XXXXXXXXX</p>
+<p><b>EasyPaisa:</b> 03XXXXXXXXX</p>
+
+<p>After payment, send screenshot on WhatsApp</p>
+
+<a href="https://wa.me/92XXXXXXXXX">
+<button>Send Screenshot</button>
+</a>
+
+<p>Service activation within 24 hours</p>• This is a promotion service
+• No investment or earning scheme
+• Results may vary
+• Manual approval
+• No refunds after service started
